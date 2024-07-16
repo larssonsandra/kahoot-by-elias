@@ -62,7 +62,7 @@ export default function Quiz({
       {!isAnswerRevealed && chosenChoice && (
         <div className="flex-grow flex justify-center items-center">
           <div className="text-white text-2xl text-center p-4">
-            Wait for others to answer...
+            Väntar på andra för svar på frågan...
           </div>
         </div>
       )}
