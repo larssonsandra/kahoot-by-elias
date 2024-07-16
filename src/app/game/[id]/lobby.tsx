@@ -65,11 +65,9 @@ export default function Lobby({
 
         {participant && (
           <div className="text-white max-w-md">
-            <h1 className="text-xl pb-4">Welcome {participant.nickname}！</h1>
+            <h1 className="text-xl pb-4">Välkommen {participant.nickname}！</h1>
             <p>
-              You have been registered and your nickname should show up on the
-              admin screen. Please sit back and wait until the game master
-              starts the game.
+            Du har blivit registrerad och ditt smeknamn bör synas på administratörsgränssnittet. Vänligen luta dig tillbaka och vänta tills spelledaren startar spelet.
             </p>
           </div>
         )}
@@ -116,7 +114,7 @@ function Register({
         className="p-2 w-full border border-black text-black"
         type="text"
         onChange={(val) => setNickname(val.currentTarget.value)}
-        placeholder="Nickname"
+        placeholder="Smeknamn"
         maxLength={20}
       />
       <button disabled={sending} className="w-full py-2 bg-green-500 mt-4">

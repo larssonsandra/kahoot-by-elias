@@ -39,7 +39,7 @@ export default function Lobby({
             className="mx-auto bg-white py-4 px-12 block text-black"
             onClick={onClickStartGame}
           >
-            starta spelet
+            Starta spelet
           </button>
         </div>
         <div className="pl-4">

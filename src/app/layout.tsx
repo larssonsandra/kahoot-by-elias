@@ -5,7 +5,7 @@ import './globals.css'
 const inter = Inter({ subsets: ['latin'] })
 
 export const metadata: Metadata = {
-  title: 'SupaQuiz',
+  title: 'Kahoot by Elias ',
   description: 'OSS Kahoot Alternative powered by Supabase',
 }
 
