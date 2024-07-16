@@ -101,7 +101,7 @@ export default function Quiz({
             className="p-2 bg-white text-black rounded hover:bg-gray-200"
             onClick={getNextQuestion}
           >
-            Next
+            Nästa
           </button>
         )}
       </div>

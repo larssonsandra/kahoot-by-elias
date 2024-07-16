@@ -39,13 +39,13 @@ export default function Lobby({
             className="mx-auto bg-white py-4 px-12 block text-black"
             onClick={onClickStartGame}
           >
-            Start Game
+            starta spelet
           </button>
         </div>
         <div className="pl-4">
           {/* <img src="/qr.png" alt="QR code" /> */}
           <Canvas
-            text={`https://kahoot-alternative.vercel.app/game/${gameId}`}
+            text={`https://kahoot-by-elias.vercel.app/game/${gameId}`}
             options={{
               errorCorrectionLevel: 'M',
               margin: 3,

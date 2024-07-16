@@ -120,7 +120,7 @@ function Register({
         maxLength={20}
       />
       <button disabled={sending} className="w-full py-2 bg-green-500 mt-4">
-        Join
+        Gå med
       </button>
     </form>
   )
