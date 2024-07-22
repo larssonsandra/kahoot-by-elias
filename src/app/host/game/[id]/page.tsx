@@ -8,7 +8,7 @@ import {
   Question,
   QuizSet,
   supabase,
-} from '@/types/types'
+} from '../../../../types/types'
 import { useEffect, useState } from 'react'
 import Lobby from './lobby'
 import Quiz from './quiz'
