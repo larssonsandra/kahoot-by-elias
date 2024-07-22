@@ -1,4 +1,4 @@
-import { Participant, supabase } from '@/types/types'
+import { Participant, supabase } from '../../../../types/types'
 import { useQRCode } from 'next-qrcode'
 
 export default function Lobby({

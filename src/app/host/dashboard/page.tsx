@@ -1,6 +1,6 @@
 'use client'
 
-import { QuizSet, supabase } from '@/types/types'
+import { QuizSet, supabase } from '../../../types/types'
 import { useEffect, useState } from 'react'
 
 export default function Home() {

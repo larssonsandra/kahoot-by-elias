@@ -5,7 +5,7 @@ import {
   Question,
   QuizSet,
   supabase,
-} from '@/types/types'
+} from '../../../../types/types'
 import { useEffect, useState } from 'react'
 import Confetti from 'react-confetti'
 import useWindowSize from 'react-use/lib/useWindowSize'

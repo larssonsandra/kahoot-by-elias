@@ -2,7 +2,7 @@
 
 import React, { FormEvent, useEffect, useRef, useState } from 'react'
 import { RealtimeChannel } from '@supabase/supabase-js'
-import { Choice, Game, Participant, Question, supabase } from '@/types/types'
+import { Choice, Game, Participant, Question, supabase } from '../../../types/types'
 import Lobby from './lobby'
 import Quiz from './quiz'
 

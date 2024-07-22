@@ -1,4 +1,4 @@
-import { Participant, supabase } from '@/types/types'
+import { Participant, supabase } from '../../../types/types'
 import { on } from 'events'
 import { FormEvent, useEffect, useState } from 'react'
 
