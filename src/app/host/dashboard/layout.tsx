@@ -6,7 +6,11 @@ import Link from 'next/link'
 const inter = Inter({ subsets: ['latin'] })
 
 export const metadata: Metadata = {
+<<<<<<< HEAD
   title: 'Kahoot by Elias ',
+=======
+  title: 'Kahoot by Elias',
+>>>>>>> 5ce3f9a (translated to swedish)
   description: 'Fun quiz game powered by Supabase',
 }
 
@@ -18,7 +22,11 @@ export default function RootLayout({
   return (
     <>
       <header className="h-16 px-2 flex justify-between border-b border-gray-200 items-center">
+<<<<<<< HEAD
         <h1>Kahoot by Elias </h1>
+=======
+        <h1>Kahoot by Elias</h1>
+>>>>>>> 5ce3f9a (translated to swedish)
       </header>
       <div className="flex">
         <nav className="border-r border-r-gray-200">
