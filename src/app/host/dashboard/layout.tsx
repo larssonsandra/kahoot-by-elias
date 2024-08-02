@@ -17,11 +17,10 @@ export default function RootLayout({
 }) {
   return (
     <>
-      <header className="h-16 px-2 flex justify-between border-b border-gray-200 items-center">
-        <h1>Kahoot by Elias</h1>
-      </header>
+      <header className="h-16 px-2 bg-slate-400 border-b border-gray-200"></header>
       <div className="flex">
         <nav className="border-r border-r-gray-200">
+          <h1>Kahoot by Elias</h1>
           <ul>
             <li className="">
               <Link
@@ -30,22 +29,60 @@ export default function RootLayout({
               >
                 <div className="px-2">
                   <svg
-                    xmlns="http://www.w3.org/2000/svg"
-                    fill="none"
+                    aria-label="Hem"
+                    fill="currentColor"
+                    height="24"
+                    role="img"
                     viewBox="0 0 24 24"
-                    strokeWidth={1.5}
-                    stroke="currentColor"
-                    className="w-6 h-6"
+                    width="24"
                   >
-                    <path
-                      strokeLinecap="round"
-                      strokeLinejoin="round"
-                      d="m2.25 12 8.954-8.955c.44-.439 1.152-.439 1.591 0L21.75 12M4.5 9.75v10.125c0 .621.504 1.125 1.125 1.125H9.75v-4.875c0-.621.504-1.125 1.125-1.125h2.25c.621 0 1.125.504 1.125 1.125V21h4.125c.621 0 1.125-.504 1.125-1.125V9.75M8.25 21h8.25"
-                    />
+                    <title>Start</title>
+                    <path d="M22 23h-6.001a1 1 0 0 1-1-1v-5.455a2.997 2.997 0 1 0-5.993 0V22a1 1 0 0 1-1 1H2a1 1 0 0 1-1-1V11.543a1.002 1.002 0 0 1 .31-.724l10-9.543a1.001 1.001 0 0 1 1.38 0l10 9.543a1.002 1.002 0 0 1 .31.724V22a1 1 0 0 1-1 1Z"></path>
                   </svg>
                 </div>
-
-                <div className="flex-grow">Home</div>
+                <div className="flex-grow">Start</div>
+              </Link>
+            </li>
+            <li className="">
+              <Link
+                className="flex items-center h-12 w-52 hover:bg-gray-100"
+                href="/host/dashboard"
+              >
+                <div className="px-2">
+                  <svg
+                    aria-label="Utforska"
+                    fill="currentColor"
+                    height="24"
+                    role="img"
+                    viewBox="0 0 24 24"
+                    width="24"
+                  >
+                    <title>Upptäck</title>
+                    <polygon
+                      fill="none"
+                      points="13.941 13.953 7.581 16.424 10.06 10.056 16.42 7.585 13.941 13.953"
+                      stroke="currentColor"
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                      stroke-width="2"
+                    ></polygon>
+                    <polygon
+                      fill-rule="evenodd"
+                      points="10.06 10.056 13.949 13.945 7.581 16.424 10.06 10.056"
+                    ></polygon>
+                    <circle
+                      cx="12.001"
+                      cy="12.005"
+                      fill="none"
+                      r="10.5"
+                      stroke="currentColor"
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                      stroke-width="2"
+                    ></circle>
+                  </svg>
+                </div>
+                <div className="flex-grow">Upptäck</div>
               </Link>
             </li>
           </ul>
