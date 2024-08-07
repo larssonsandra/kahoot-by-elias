@@ -68,47 +68,53 @@ export default function LoginPage({
   // };
 
   return (
-    <div className="flex h-screen justify-center items-center">
-
-      <form className="flex flex-col justify-center gap-2 text-foreground">
+    <div className="flex h-screen justify-center items-center font-semibold">
+      <form className="flex flex-col justify-center gap-2 py-10 px-10 text-foreground border border-gray-200 w-96">
+        <h2 className="text-2xl font-bold text-center mb-4">Logga in</h2>
         <label className="text-md" htmlFor="email">
-          Email
+          Användarnamn eller e-postadress
         </label>
         <input
           className="rounded-md px-4 py-2 bg-inherit border mb-6"
           name="email"
-          placeholder="you@example.com"
+          // placeholder="you@example.com"
           required
         />
         <label className="text-md" htmlFor="password">
-          Password
+          Lösenord
         </label>
         <input
           className="rounded-md px-4 py-2 bg-inherit border mb-6"
           type="password"
           name="password"
-          placeholder="••••••••"
+          // placeholder="••••••••"
           required
         />
+        <p>Glömt lösenordet? Återställ ditt lösenord</p>
         <SubmitButton
           formAction={login}
-          className="bg-green-700 rounded-md px-4 py-2 text-foreground mb-2"
+          className="bg-primary rounded-md px-4 py-2 text-white mb-2"
           pendingText="Signing In..."
         >
-          Sign In
+          Logga in
         </SubmitButton>
         <SubmitButton
           formAction={signup}
-          className="border border-foreground/20 rounded-md px-4 py-2 text-foreground mb-2"
+          className="border border-foreground/20 rounded-md px-4 py-2 bg-primary text-white mb-2"
           pendingText="Signing Up..."
         >
-          Sign Up
+          Skapa konto
         </SubmitButton>
         {searchParams?.message && (
           <p className="mt-4 p-4 bg-foreground/10 text-foreground text-center">
             {searchParams.message}
           </p>
         )}
+        <div className="relative flex items-center w-full">
+          <hr className="flex-1 border-t border-gray-400" />
+          <span className="px-2 bg-white text-grey-500">eller</span>
+          <hr className="flex-1 border-t border-gray-400" />
+        </div>
       </form>
     </div>
   );
