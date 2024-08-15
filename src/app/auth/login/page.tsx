@@ -14,6 +14,7 @@
 // }
 
 import Link from "next/link";
+import Image from "next/image";
 import { headers } from "next/headers";
 import { createClient } from "@/supabase/server";
 import { redirect } from "next/navigation";
@@ -90,7 +91,9 @@ export default function LoginPage({
           // placeholder="••••••••"
           required
         />
-        <p>Glömt lösenordet? Återställ ditt lösenord</p>
+        <p className="text-sm text-center font-medium mb-2">
+          Glömt lösenordet? Återställ ditt lösenord
+        </p>
         <SubmitButton
           formAction={login}
           className="bg-primary rounded-md px-4 py-2 text-white mb-2"
@@ -100,7 +103,7 @@ export default function LoginPage({
         </SubmitButton>
         <SubmitButton
           formAction={signup}
-          className="border border-foreground/20 rounded-md px-4 py-2 bg-primary text-white mb-2"
+          className="border border-black rounded-md px-4 py-2 bg-white text-black mb-2"
           pendingText="Signing Up..."
         >
           Skapa konto
@@ -115,6 +118,38 @@ export default function LoginPage({
           <span className="px-2 bg-white text-grey-500">eller</span>
           <hr className="flex-1 border-t border-gray-400" />
         </div>
+        <SubmitButton
+          formAction={login}
+          className="flex justify-center items-center  border border-1 border-black rounded-sm px-2 py-2 bg-white text-gray-700 mb-2"
+          pendingText="Signing In..."
+        >
+          <Image
+            className="mr-auto"
+            src="/svg/google-logo.svg"
+            alt="Google Logo"
+            width={20}
+            height={20}
+          />
+          <span className="mr-auto text-sm font-medium">
+            Fortsätt med Google
+          </span>
+        </SubmitButton>
+        <SubmitButton
+          formAction={login}
+          className="flex justify-center items-center  border border-1 border-black rounded-sm px-2 py-2 bg-white text-gray-700 mb-2"
+          pendingText="Signing In..."
+        >
+          <Image
+            className="mr-auto"
+            src="/svg/apple-logo.svg"
+            alt="Apple Logo"
+            width={20}
+            height={20}
+          />
+          <span className="mr-auto text-sm font-medium">
+            Fortsätt med Apple
+          </span>
+        </SubmitButton>
       </form>
     </div>
   );

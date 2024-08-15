@@ -26,6 +26,27 @@ export async function login(formData: FormData) {
   redirect('/host/dashboard')
 }
 
+export async function loginWithGoogle() {
+  const supabase = createClient();
+
+  const { error } = await supabase.auth.signInWithOAuth({
+    provider: 'google',
+    options: {
+      redirectTo: `${process.env.NEXT_PUBLIC_SITE_URL}/api/auth/callback`, // Adjust the redirect URL as needed
+      scopes: 'openid profile email',
+    },
+  });
+
+  if (error) {
+    console.error('Google login error:', error.message); // Enhanced error logging
+    redirect('/error');
+    return; // Ensure we exit the function after redirecting
+  }
+
+  revalidatePath('host', 'layout');
+  redirect('/host/dashboard');
+}
+
 export async function signup(formData: FormData) {
   const supabase = createClient()
 
